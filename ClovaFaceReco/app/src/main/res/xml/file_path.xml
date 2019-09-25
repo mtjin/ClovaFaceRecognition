@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <paths>
+        <!--내부 경로에 모두 접근해가헤가위해서 /를 쓴다 만약 photo폴더에만 접근하게할려면 /photo라 적으면된다.-->
+        <files-path name="files" path="/" />
+    </paths>
+</paths>

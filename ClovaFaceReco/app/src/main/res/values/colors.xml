@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="white">#ffffff</color>
+    <color name="white_gray">#DDDDDD</color>
+    <color name="background">#141414</color>
+    <color name="real_black">#d4b79b</color>
+    <color name="edit_black">#cc1d1d1d</color>
+    <color name="edit_box">#ccc2c0c0</color>
+    <color name="invisible">#0000</color>
+
+
+    <color name="real_black1">#f9f9f9</color>
+    <color name="real_black2">#e6d1be</color>
+</resources>

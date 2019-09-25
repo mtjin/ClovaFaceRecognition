@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/real_black2"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/movie_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/photo_frame"
+            android:layout_width="320dp"
+            android:layout_height="462dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:background="@drawable/polaroid_bg"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/face_result">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/photo_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/polaroid_text_bg"
+                    android:scaleType="fitXY"
+                    app:riv_border_width="0dp"
+                    app:riv_corner_radius="8dp" />
+
+
+                <TextView
+                    android:id="@+id/guide_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="top"
+                    android:background="@drawable/polaroid_text_bg"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="당신과 닮은 유명 연예인을 찾아보세요!!"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/photo_add_btn"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_posterplus" />
+
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/face_result"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textSize="28sp"
+                tools:text="서효림과 30.49% 닮았습니다" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/refresh_btn"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/photo_frame"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:background="@drawable/polaroid_bg"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+            <ImageView
+                android:id="@+id/refresh_img"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_refresh" />
+
+            <TextView
+                android:id="@+id/refresh_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="한번 더!"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/edit_black"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
